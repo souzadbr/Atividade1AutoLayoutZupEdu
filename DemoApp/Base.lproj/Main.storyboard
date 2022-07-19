@@ -136,14 +136,48 @@
                                             <constraint firstItem="b3O-Rc-LuZ" firstAttribute="trailing" secondItem="deq-6T-bYU" secondAttribute="trailing" id="yia-3g-9xJ"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CP-of-T7A" userLabel="View consultas">
+                                        <rect key="frame" x="24" y="314" width="366" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="consultas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNq-e7-8O1" userLabel="label consultas">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCX-a6-SHm" userLabel="Button consultar chaves">
+                                                <rect key="frame" x="0.0" y="34" width="366" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="shV-sO-XuI"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="minhas chaves "/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TNq-e7-8O1" firstAttribute="top" secondItem="6CP-of-T7A" secondAttribute="top" id="ClW-3m-GUE"/>
+                                            <constraint firstItem="TNq-e7-8O1" firstAttribute="leading" secondItem="6CP-of-T7A" secondAttribute="leading" id="V1N-pW-Jp0"/>
+                                            <constraint firstAttribute="trailing" secondItem="TNq-e7-8O1" secondAttribute="trailing" id="dCL-mJ-lLU"/>
+                                            <constraint firstAttribute="bottom" secondItem="jCX-a6-SHm" secondAttribute="bottom" id="qZT-FB-Zqy"/>
+                                            <constraint firstItem="TNq-e7-8O1" firstAttribute="leading" secondItem="6CP-of-T7A" secondAttribute="leading" id="tdz-gR-UbP"/>
+                                            <constraint firstAttribute="trailing" secondItem="jCX-a6-SHm" secondAttribute="trailing" id="uET-ay-MBX"/>
+                                            <constraint firstItem="jCX-a6-SHm" firstAttribute="leading" secondItem="6CP-of-T7A" secondAttribute="leading" id="uHD-Cr-7WE"/>
+                                            <constraint firstItem="jCX-a6-SHm" firstAttribute="top" secondItem="TNq-e7-8O1" secondAttribute="bottom" constant="12" id="x8a-uv-LHn"/>
+                                            <constraint firstAttribute="trailing" secondItem="TNq-e7-8O1" secondAttribute="trailing" id="xkL-7g-Kv3"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.8980392157" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="6CP-of-T7A" firstAttribute="top" secondItem="m4q-Dw-fnv" secondAttribute="bottom" constant="24" id="00y-Fb-bZn"/>
                                     <constraint firstItem="hGd-8v-cV0" firstAttribute="top" secondItem="lAl-rw-TTL" secondAttribute="top" constant="-70" id="6wo-W0-RAw"/>
+                                    <constraint firstItem="6CP-of-T7A" firstAttribute="trailing" secondItem="m4q-Dw-fnv" secondAttribute="trailing" id="LK4-8A-Cbf"/>
                                     <constraint firstItem="m4q-Dw-fnv" firstAttribute="leading" secondItem="hGd-8v-cV0" secondAttribute="leading" id="MiR-HE-Aav"/>
                                     <constraint firstAttribute="trailing" secondItem="hGd-8v-cV0" secondAttribute="trailing" constant="24" id="S16-iu-c9j"/>
                                     <constraint firstItem="m4q-Dw-fnv" firstAttribute="trailing" secondItem="hGd-8v-cV0" secondAttribute="trailing" id="VJf-xd-jbM"/>
                                     <constraint firstItem="m4q-Dw-fnv" firstAttribute="top" secondItem="hGd-8v-cV0" secondAttribute="bottom" constant="24" id="lke-Ix-Srv"/>
+                                    <constraint firstItem="6CP-of-T7A" firstAttribute="leading" secondItem="m4q-Dw-fnv" secondAttribute="leading" id="lmn-ms-rkb"/>
                                     <constraint firstItem="hGd-8v-cV0" firstAttribute="leading" secondItem="lAl-rw-TTL" secondAttribute="leading" constant="24" id="p18-CX-YL1"/>
                                 </constraints>
                             </view>
