@@ -18,19 +18,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLh-Na-uOx" userLabel="View cabecalho">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagamentos instantâneos " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma4-Og-kcg" userLabel="SubTitulo da tela">
-                                        <rect key="frame" x="24" y="153" width="222" height="22"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.47058823529999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.84705882352941175" green="0.47058823529411764" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ma4-Og-kcg" secondAttribute="bottom" constant="94" id="Ldt-S7-shR"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAl-rw-TTL" userLabel="View principal">
                                 <rect key="frame" x="0.0" y="277" width="414" height="619"/>
@@ -92,11 +81,69 @@
                                             <constraint firstItem="efy-gQ-mrh" firstAttribute="bottom" secondItem="2uT-Jg-CUJ" secondAttribute="bottom" id="kgH-sz-VjI"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-Dw-fnv" userLabel="View transacoes">
+                                        <rect key="frame" x="24" y="94" width="366" height="196"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="transações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma4-Og-kcg" userLabel="label transacoes">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swq-V0-hM7" userLabel="Button transferencia">
+                                                <rect key="frame" x="0.0" y="34" width="366" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="NiK-ya-EWw"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Transferir"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deq-6T-bYU" userLabel="Button pagar QR code">
+                                                <rect key="frame" x="0.0" y="92" width="366" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="sGu-vI-d8s"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="paga QR code "/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3O-Rc-LuZ" userLabel="Button receber pix ">
+                                                <rect key="frame" x="0.0" y="150" width="366" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="NQF-Ix-C6y"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="receber Pix"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ma4-Og-kcg" secondAttribute="trailing" id="4VG-SY-QKx"/>
+                                            <constraint firstItem="ma4-Og-kcg" firstAttribute="top" secondItem="m4q-Dw-fnv" secondAttribute="top" id="6Y3-24-0Wl"/>
+                                            <constraint firstItem="b3O-Rc-LuZ" firstAttribute="top" secondItem="deq-6T-bYU" secondAttribute="bottom" constant="12" id="80O-Kd-43l"/>
+                                            <constraint firstItem="deq-6T-bYU" firstAttribute="trailing" secondItem="swq-V0-hM7" secondAttribute="trailing" id="EVP-nj-a0X"/>
+                                            <constraint firstItem="deq-6T-bYU" firstAttribute="leading" secondItem="swq-V0-hM7" secondAttribute="leading" id="G3P-Lz-1yW"/>
+                                            <constraint firstAttribute="trailing" secondItem="swq-V0-hM7" secondAttribute="trailing" id="Hq1-NK-oX2"/>
+                                            <constraint firstItem="ma4-Og-kcg" firstAttribute="leading" secondItem="m4q-Dw-fnv" secondAttribute="leading" id="QCU-kK-r5L"/>
+                                            <constraint firstItem="swq-V0-hM7" firstAttribute="top" secondItem="ma4-Og-kcg" secondAttribute="bottom" constant="12" id="gZU-6y-3ad"/>
+                                            <constraint firstAttribute="bottom" secondItem="b3O-Rc-LuZ" secondAttribute="bottom" id="jSj-Wb-nXk"/>
+                                            <constraint firstItem="swq-V0-hM7" firstAttribute="leading" secondItem="m4q-Dw-fnv" secondAttribute="leading" id="kP1-Fd-6vt"/>
+                                            <constraint firstItem="b3O-Rc-LuZ" firstAttribute="leading" secondItem="deq-6T-bYU" secondAttribute="leading" id="lj9-zz-EQe"/>
+                                            <constraint firstItem="deq-6T-bYU" firstAttribute="top" secondItem="swq-V0-hM7" secondAttribute="bottom" constant="12" id="r7Y-xZ-HVW"/>
+                                            <constraint firstItem="b3O-Rc-LuZ" firstAttribute="trailing" secondItem="deq-6T-bYU" secondAttribute="trailing" id="yia-3g-9xJ"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.8980392157" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="hGd-8v-cV0" firstAttribute="top" secondItem="lAl-rw-TTL" secondAttribute="top" constant="-70" id="6wo-W0-RAw"/>
+                                    <constraint firstItem="m4q-Dw-fnv" firstAttribute="leading" secondItem="hGd-8v-cV0" secondAttribute="leading" id="MiR-HE-Aav"/>
                                     <constraint firstAttribute="trailing" secondItem="hGd-8v-cV0" secondAttribute="trailing" constant="24" id="S16-iu-c9j"/>
+                                    <constraint firstItem="m4q-Dw-fnv" firstAttribute="trailing" secondItem="hGd-8v-cV0" secondAttribute="trailing" id="VJf-xd-jbM"/>
+                                    <constraint firstItem="m4q-Dw-fnv" firstAttribute="top" secondItem="hGd-8v-cV0" secondAttribute="bottom" constant="24" id="lke-Ix-Srv"/>
                                     <constraint firstItem="hGd-8v-cV0" firstAttribute="leading" secondItem="lAl-rw-TTL" secondAttribute="leading" constant="24" id="p18-CX-YL1"/>
                                 </constraints>
                             </view>
@@ -112,7 +159,6 @@
                             <constraint firstItem="sLh-Na-uOx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="b6X-q1-qNB"/>
                             <constraint firstAttribute="bottom" secondItem="lAl-rw-TTL" secondAttribute="bottom" id="bfz-TM-HqM"/>
                             <constraint firstItem="lAl-rw-TTL" firstAttribute="top" secondItem="sLh-Na-uOx" secondAttribute="bottom" constant="8" symbolic="YES" id="cWJ-JI-2bv"/>
-                            <constraint firstItem="ma4-Og-kcg" firstAttribute="leading" secondItem="hGd-8v-cV0" secondAttribute="leading" id="wwj-pV-GqV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -122,6 +168,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
